@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="QR code, HTML, CSS">
+  <meta name="description" content="Custom card to show the qr code">
+  <meta name="author" content="Joao Ribeiro">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- import Outfit font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+    }
+
+    body {
+      /* Define color */
+      background-color: var(--light-gray);
+
+      /* Define font */
+      font-family: Outfit;
+
+      /* Define display flex with centered contents */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      /* Define the width equals the screen size */
+      height: 100vh;
+
+      /* Remove margins from body */
+      margin: 0;
+    }
+
+    #card {
+      /* Define color */
+      background-color: var(--white);
+
+      /* Define texts centered */
+      text-align: center;
+
+      /* Define card width */
+      width: 288px;
+
+      /* Use the maximum space available to card. It also help to center the card.*/
+      margin: auto;
+
+      padding: 16px;
+      border-radius: 20px;
+    }
+
+    #card img {
+      border-radius: 10px;
+    }
+
+    #card h2 {
+      color: var(--dark-blue);
+    }
+
+    #card p {
+      font-size: 15px;
+      color: var(--grayish-blue);
+      padding: 0 12px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section id="card">
+    <img src="images/image-qr-code.png" alt="Qr code image" width="288" height="288">
+
+    <h2>Improve your front-end skills by building projects</h2>
+
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </section>
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
+      by <a href="#">Joao Ribeiro</a>.</p>
+  </div>
+</body>
+
+</html>
