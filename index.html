@@ -41,7 +41,7 @@
       align-items: center;
 
       /* Define the width equals the screen size */
-      height: 100vh;
+      height: 100svh;
 
       /* Remove margins from body */
       margin: 0;
@@ -85,6 +85,12 @@
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+
+    @supports (height: 100svh) {
+      body {
+        min-height: calc(100svh - 6rem);
+      }
     }
   </style>
 </head>
